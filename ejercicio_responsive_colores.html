@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio BASE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css">
+/* etiquetas de neutralidad */
+*{
+        box-sizing:        border-box;
+}
+/* Neutralidad */
+header, section, nav, footer, article{
+        display:block;
+        margin:0;
+        padding:0;
+}
+html{
+	background:#FFC;
+}
+
+body{ width:960px;
+      margin:0 auto;
+      
+}
+
+div{
+	height:400px;      
+}
+
+/*Movil*/
+@media (max-width:480px){
+        body, article, aside{
+                width:320px;
+        }
+        body{
+			background-color:red;
+		}
+
+}
+/*Tabletas*/
+@media only screen and (min-width:481px) and (max-width:768px){
+        body, article, aside{
+                width:80%;				
+        }
+		body{
+			background-color:green;
+		}
+       
+}
+/*Pantalla*/
+@media only screen and (min-width:769px){
+        body{
+                width:960px;
+				background-color:yellow;
+        }
+}
+</style>
+</head>
+<body>
+<div>
+<p>HOLA</p>
+</div>
+</body>
+</html>

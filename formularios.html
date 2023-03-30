@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> .: Formularios :. </title>
+
+<meta charset="UTF-8">
+<style>
+h1{background-color:orange}
+h2{background-color:lightblue}
+tr:hover{background-color:lightpink}
+</style>
+</head>
+<body>
+<h1> .: Formularios :. </h1>
+<form action="mailto:batressi@esat-alumni.com" method="post" enctype="text/plain">
+<table width="550" height="" border="0"
+  cellpadding="10">
+<caption align="bottom"> Elementos de Formulario </caption>
+  <tr> 	<td> Nombre:</td>
+	<td> <input type="text" name="nombre" value="Introduce nombre"></td>
+  </tr>
+  <tr>
+  	<td> Apellido:</td>
+	<td> <input type="text" name="apellido" size="40"></td>
+  </tr>	
+  <tr>
+  	<td> Clave:</td>
+	<td> <input type="password" name="pwd" maxlength="5"></td>
+  </tr>
+  <tr>
+  	<td>Comentarios: </td>
+	<td> <textarea rows="5" cols="40">
+Intro comment
+	     </textarea>
+	</td>
+  </tr>	
+  <tr>
+  	<td>Elemento selección: </td>
+	<td> <select name="libro">
+	<option> Selecciona Libro </option>
+        <option value="isbn5588997">C++</option>
+        <option value="isbn5588237">La biblia del C</option>
+        <option value="isbn5588111">El C es lo más</option>
+	</select>
+	</td>
+  </tr>
+  <tr>
+  	<td>Elemento selección: </td>
+	<td> <select name="libro" size="5">
+	<option> Selecciona Libro </option>
+        <option value="isbn5588997">C++</option>
+        <option value="isbn5588237" selected>La biblia del C</option>
+        <option value="isbn5588111">El C es lo más</option>
+	<option> Selecciona Libro </option>
+        <option value="isbn5588997">C++</option>
+        <option value="isbn5588237">La biblia del C</option>
+        <option value="isbn5588111">El C es lo más</option>
+	<option> Selecciona Libro </option>
+        <option value="isbn5588997">C++</option>
+        <option value="isbn5588237">La biblia del C</option>
+        <option value="isbn5588111">El C es lo más</option>
+	</select>
+	</td>
+  </tr>
+  <tr>
+  	<td> Elemento Check</td>
+	<td>Selecciona Pais<br>
+	    <fieldset>
+	    <legend align="right"> Elige los mejores paises </legend>
+	    
+	    España <input type="checkbox" name="pais1" value="España">
+	    Japón <input type="checkbox" name="pais2" value="Japón">
+	    Alemania <input type="checkbox" name="pais3" value="Alemania">
+	    Argentina <input type="checkbox" name="pais4" value="Argentina">
+	    </fieldset>   
+	</td>
+  </tr>
+  <tr>
+  	<td> Elemento Radio</td>
+	<td>Selecciona Pais<br>
+	    España <input type="radio" name="porra" value="España">
+	    Japón <input type="radio" name="porra" value="Japón">
+	    Alemania <input type="radio" name="porra" value="Alemania">
+	    Argentina <input type="radio" name="porra" value="Argentina">   
+	</td>
+  </tr>
+  <tr>
+  	<td> Documento:</td>
+	<td><input type="file" name="adjunto"> </td>
+  </tr>
+  <tr>
+  	<td> Enviar datos:</td>
+	<td><input type="image" src="imagenes/pngwing.png" width="40"> 
+	    <input type="reset" value="Borrar datos"> </td>
+  </tr>
+  <tr>
+  	<td>Etiquetas del HTML 5: </td>
+	<td><input type="color"> <br>
+	    <input type="date"> <br>
+	    <input type="email"> <br>
+	    <input type="month"> <br>
+	    <input type="range"> <br>
+	    <input type="url"> <br>
+	    <input type="number" max="20"> <br>
+	    </td>
+  </tr>					
+  <tr>
+  	<td> </td>
+	<td> </td>
+  </tr>				
+</table>
+</form>
+</body>
+</html>

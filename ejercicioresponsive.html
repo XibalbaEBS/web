@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content=
+"width=device-width, initial-scale=1">
+<title>Documento sin título</title>
+<style>
+/* ELEMENTOS DE NTEUTRALIDAD */
+*{box-sizing:border-box;}
+html{
+	margin:0;
+	padding:0;
+}
+body{
+	width:960px;
+	margin:0 auto;
+	padding:0;
+	background-color:#FFFFCC
+}
+header, footer, nav, section, article, aside{
+	display:block;
+}
+/* ELEMENTOS ESTRUCTURALES */
+header{
+	height:90px;
+	background-color:#6CC;
+}
+section{
+	height:500px;
+	background-color:#CCCC66;
+}
+article{
+	width:65%;
+	height:480px;
+	background-color:#FF9933;
+	float:left;
+	
+}
+aside{
+	width:35%;
+	height:480px;
+	background-color:#FF9933;
+	float:right;
+}
+footer{
+	height:60px;
+	background-color:#F66;
+	clear:both;
+}
+
+p{
+	padding:10px;}
+	h1{
+
+text-align: center;
+
+}
+
+/* ESTILOS DE FUENTES */
+
+/* CLASES */
+.fleft{
+	float:left;
+	margin:10px;
+	}
+@media only screen and (device-width:769px){
+	}
+/*Tablet*/
+@media only screen and (min-device-width: 481px) and (max-device-width:768px){
+	body{
+		width:650px;
+	}
+	article{
+		height:auto;
+		width:100%;
+		clear:both;
+	}
+aside{
+	width:100%;
+	height:auto;
+	clear:both;
+}
+}
+
+/*Celular*/
+@media only screen and (max-device-width: 480px){
+	body{
+		width:420px;
+	}
+	article{
+		height:auto;
+		width:100%;
+		clear:both;
+	
+}
+aside{
+	height:auto;
+	width:100%;
+	clear:both;
+}
+.fleft{
+	float:none;
+	clear:both;
+	margin:none;
+	}
+img{width:90%;
+	alignment-adjust:middle;
+	padding:20px;}
+}
+</style>
+</head>
+
+<body>
+
+<header><h1 align>Historia de los<br> VIDEOJUEGOS</h1></header>
+
+<article><p><img src="imagenes/logo111.jpg"  class="fleft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+<p><img src="imagenes/logo300.jpg"  class="fleft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+</article>
+<aside><p><img src="imagenes/logo6.jpg" class="fleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque lectus sed scelerisque aliquam. Pellentesque efficitur cursus elit ac fermentum. Duis mauris justo, euismod eget felis vitae, eleifend blandit sapien. Aliquam in eros pretium, venenatis mauris at, elementum purus. Nullam magna lacus, egestas vitae nunc laoreet, imperdiet suscipit quam. Nullam porttitor est lacus. Proin dolor erat, placerat sit amet odio vel, consequat mollis orci. Curabitur tellus metus, condimentum eu urna blandit, congue bibendum dui.
+<br>
+Nullam porttitor est lacus. Proin dolor erat, placerat sit amet odio vel, consequat mollis orci. Curabitur tellus metus, condimentum eu urna blandit, congue bibendum dui.
+<p></aside>
+<footer>@Pie de página</footer>
+</body>
+</html>
