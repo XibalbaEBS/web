@@ -28,15 +28,15 @@ header .logo{
 
 header .container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
 header a{
@@ -237,7 +237,24 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+@media (min-width: 700px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
 
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+}
 @media (min-width: 850px){
     header{
         position: fixed;
@@ -250,6 +267,7 @@ footer .container{
     }
 
     header nav{
+        display: flex;
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;

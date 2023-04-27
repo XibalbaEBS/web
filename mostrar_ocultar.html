@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Show/Hide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{box-sizing:border-box;}
+/*Pantalla*/
+@media only screen and (device-width:769px){
+	}
+/*Tablet*/
+@media only screen and (min-device-width: 481px) and (max-device-width:768px){
+}
+
+/*Celular*/
+@media only screen and (max-device-width: 480px){
+}
+
+#apDiv1 {
+	position:absolute;
+	left:44px;
+	top:63px;
+	width:380px;
+	height:251px;
+	z-index:1;
+	background-color:#00FF00;
+}
+#apDiv2 {
+	position:absolute;
+	left:168px;
+	top:171px;
+	width:288px;
+	height:216px;
+	z-index:2;
+	background-color:orange;
+}
+</style>
+</head>
+
+<body>
+<div id="apDiv1"></div>
+<div id="apDiv2"></div>
+<form>
+<input name="button1" id="button1" type="button" value="Mostrar">
+<input name="button2" id="button2" type="button" value="Ocultar">
+</form>
+</body>
+</html>

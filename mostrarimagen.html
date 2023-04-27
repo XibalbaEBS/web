@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOC BSE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+</style>
+<script>
+	function Mostrarfecha(){
+		var fecha = new Date;
+		var semana = new Array;
+		var meses = new Array;
+		semana[0]="Domingo";
+		semana[1]="Lunes";
+		semana[2]="Martes";
+		semana[3]="Miercoles";
+		semana[4]="Jueves";
+		semana[5]="Viernes";
+		semana[6]="sabado";
+
+		meses[0]="Enero";
+		meses[1]="Febrero";
+		meses[2]="Marzo";
+		meses[3]="Abril";
+		meses[4]="Mayo";
+		meses[5]="Junio";
+		meses[6]="Julio";
+
+		document.write("Hoy es "+ semana[fecha.getDay()]+" , "+fecha.getDate()+" de "+meses[fecha.getMonth()]+" del "+ fecha.getFullYear())
+	}
+	
+	function Mostrarimg(){
+		
+		var i=Math.round(8*Math.random());
+		var fotos=new Array();
+		fotos[0]="imagenes/fondos_videojuegos/fondo1.jpg";
+		fotos[1]="imagenes/fondos_videojuegos/fondo2.jpg";
+		fotos[2]="imagenes/fondos_videojuegos/fondo3.jpg";
+		fotos[3]="imagenes/fondos_videojuegos/fondo4.jpg";
+		fotos[4]="imagenes/fondos_videojuegos/fondo5.jpg";
+		fotos[5]="imagenes/fondos_videojuegos/fondo6.jpg";
+		fotos[6]="imagenes/fondos_videojuegos/fondo7.jpg";
+		fotos[7]="imagenes/fondos_videojuegos/fondo8.jpg";
+		
+		document.write("<img src ='imagenes/fondos_videojuegos/fondo1.jpg' width = '609' height = '323' alt=''>"+"<br>")
+		document.write("<img src ="+fotos[i]+ " width = '609' height = '323' alt=''>"+"<br>")
+	
+	}
+</script>
+</head>
+
+<body>
+<script>
+	Mostrarfecha();
+</script>
+
+<script>
+	Mostrarimg();
+</script>
+
+</body>
+</html>
