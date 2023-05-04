@@ -1,0 +1,20 @@
+<html>
+<body>
+<h2>Parent Window</h2>
+<button onclick="init()">open</button>
+ <script type="text/javascript">
+
+     var popup;
+
+     function init() {
+        popup =  window.open("", "newWindow", "width=800, height=600");
+        if (popup) popup.document.write('<html><body>Child Window<br><button onclick="opener.winClose()">Test</button></body></html>');
+     }
+
+     function winClose() {
+        popup.open('', '_self', ''); popup.close();
+     }
+
+</script>
+</body>
+</html> 
