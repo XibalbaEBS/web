@@ -10,7 +10,7 @@ function showTextbox(value) {
 }
 
 
-function hideTextbox(v1,v2,v3,v4) {
+/*function hideTextbox(v1,v2,v3,v4) {
     var textbox
     textbox = document.getElementById(textboxes[v1]);
     textbox.style.display = "none";
@@ -26,5 +26,14 @@ function hideTextbox(v1,v2,v3,v4) {
     var textbox3
     textbox3 = document.getElementById(textboxes[v4]);
     textbox3.style.display = "none";
+}*/
+
+function hideTextbox(id) {
+    let containers=document.getElementsByClassName("textbox");
+    for (let i = 0; i < containers.length; i++) {
+        if (containers[i].id!=id) {
+            containers[i].style.display="none";
+        }
+    }
 }
   

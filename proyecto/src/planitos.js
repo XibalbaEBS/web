@@ -1,5 +1,20 @@
 
 let slideIndex = 1;
+let textboxes=["w","u","b","r","g"];
+
+function showTextbox(value) {
+  var textbox = document.getElementById(textboxes[value]);
+  textbox.style.display = "block";
+}
+
+function hideTextbox(id) {
+  let containers=document.getElementsByClassName("textbox");
+  for (let i = 0; i < containers.length; i++) {
+      if (containers[i].id!=id) {
+          containers[i].style.display="none";
+      }
+  }
+}
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -7,6 +22,8 @@ function plusSlides(n) {
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  showTextbox(n-1);
+  hideTextbox(n-1);
 }
 
 function showSlides(n) {

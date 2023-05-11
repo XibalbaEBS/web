@@ -6,6 +6,7 @@ a{
 }
 
 header{
+    z-index: 13;
     display: flex;
     min-height: 50px;
     background-color: black;
@@ -275,12 +276,14 @@ footer .container{
     background-size: cover;
   }
   #pepe .textbox{
+    font-size: 18px;
     display: none;
+    text-align: justify;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 50%;
-    max-height: 50%;
+    max-height: 25%;
     padding: 10px;
     border-radius: 5px;
     overflow: scroll;
