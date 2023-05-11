@@ -2,11 +2,9 @@
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    left: 0;
-    transform: translateX(-50%);
     margin: auto;
   }
-  
+
   img{
     width: 100%;
   }
