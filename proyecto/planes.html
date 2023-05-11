@@ -5,10 +5,13 @@
 <title>Magic: The Gathering</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="planos.css">
 <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+<script type="text/javascript" src="src/planitos.js"></script>
 </head>
 
 <body>
+	
     <header>
 		<a href="index.html" class="logo">
 			<img src="//images.ctfassets.net/s5n2t79q9icq/3dB5uyWzUH95O1ZPBNNUX5/6cff7c65a809285755ea24b164b6ac65/magic-logo.png" alt="Magic: The Gathering Logo" loading="lazy">
@@ -20,3 +23,39 @@
             <a href="story.html" class="nav-link">Story</a>
 		</nav>
 	</header>
+	<section id="description">
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="media/ixalan.jpg" style="width:100%">
+		  <div class="text">Ixalan</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="media/izzet.jpg" style="width:100%">
+		  <div class="text">Ravnica</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="media/inistrad.jpg" style="width:100%">
+		  <div class="text">Inistrad</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		</div>
+		<br>
+		
+		<!--<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	-->
+		<script>showSlides(slideIndex);</script>
+	</section>
+</body>

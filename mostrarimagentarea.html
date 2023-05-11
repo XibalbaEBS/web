@@ -44,11 +44,31 @@
 		fotos[5]="imagenes/fondos_videojuegos/fondo6.jpg";
 		fotos[6]="imagenes/fondos_videojuegos/fondo7.jpg";
 		fotos[7]="imagenes/fondos_videojuegos/fondo8.jpg";
+		fotos[8]="imagenes/fondos_videojuegos/fondo10.jpg";
 		
 		document.write("<img src ='imagenes/fondos_videojuegos/fondo1.jpg' width = '609' height = '323' alt=''>"+"<br>")
-		document.write("<img src ="+fotos[i]+ " width = '609' height = '323' alt=''>"+"<br>")
-	
+		document.write("<img src ="+fotos[i]+ " width = '609' height = '323' alt="+fotos[i]+">"+"<br>")
 	}
+
+	function abrirVentanaConImagenAleatoria() {
+			var imagenes = [
+				"imagenes/fondos_videojuegos/fondo1.jpg",
+				"imagenes/fondos_videojuegos/fondo2.jpg",
+				"imagenes/fondos_videojuegos/fondo3.jpg",
+				"imagenes/fondos_videojuegos/fondo4.jpg",
+				"imagenes/fondos_videojuegos/fondo5.jpg",
+				"imagenes/fondos_videojuegos/fondo6.jpg",
+				"imagenes/fondos_videojuegos/fondo7.jpg",
+				"imagenes/fondos_videojuegos/fondo8.jpg",
+				"imagenes/fondos_videojuegos/fondo10.jpg",
+				"imagenes/fondos_videojuegos/fondo11.jpg",
+				"imagenes/fondos_videojuegos/fondo12.jpg",
+				"imagenes/fondos_videojuegos/fondo13.jpg"
+			];
+			var imagenAleatoria = imagenes[Math.floor(Math.random() * imagenes.length)];
+			var ventana = window.open("", "Imagen Aleatoria", "width=620,height=350");
+			ventana.document.write("<img src='" + imagenAleatoria + "'>");
+		}
 </script>
 </head>
 
@@ -60,6 +80,7 @@
 <script>
 	Mostrarimg();
 </script>
-
+<button onclick="abrirVentanaConImagenAleatoria()">Abrir ventana con imagen aleatoria</button>
 </body>
+
 </html>

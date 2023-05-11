@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botones con window.open()</title>
+	<script type="text/javascript">
+		function abrirGoogle() {
+			window.open("https://www.google.com");
+		}
+
+		function abrirGoogleConParametros() {
+			window.open("https://www.google.com", "Google", "width=800,height=600");
+		}
+
+		function abrirVentanaHola() {
+			var ventana = window.open("", "Hola", "width=400,height=300");
+			ventana.document.write("HOLA");
+		}
+
+		function abrirVentanaHolaConBotonCerrar() {
+			var ventana = window.open("", "Hola", "width=400,height=300");
+			ventana.document.write("<h1>HOLA</h1>");
+			ventana.document.write("<button onclick='window.close()'>Cerrar</button>");
+		}
+
+		function abrirVentanaConImagen() {
+			var ventana = window.open("", "Imagen", "width=400,height=300");
+			ventana.document.write("<img src='naturiaxd/naturia.jpg'>");
+		}
+
+		function abrirVentanaConImagenAleatoria() {
+			var imagenes = [
+				"imagenes/fondos_videojuegos/fondo1.jpg",
+				"imagenes/fondos_videojuegos/fondo2.jpg",
+				"imagenes/fondos_videojuegos/fondo3.jpg",
+                "imagenes/fondos_videojuegos/fondo4.jpg",
+                "imagenes/fondos_videojuegos/fondo5.jpg",
+                "imagenes/fondos_videojuegos/fondo6.jpg",
+                "imagenes/fondos_videojuegos/fondo7.jpg",
+                "imagenes/fondos_videojuegos/fondo8.jpg"
+			];
+			var imagenAleatoria = imagenes[Math.floor(Math.random() * imagenes.length)];
+			var ventana = window.open("", "Imagen Aleatoria", "width=400,height=300");
+			ventana.document.write("<img src='" + imagenAleatoria + "'>");
+		}
+	</script>
+</head>
+<body>
+	<h1>Botones con window.open()</h1>
+	<button onclick="abrirGoogle()">Abrir Google</button>
+	<button onclick="abrirGoogleConParametros()">Abrir Google con parámetros</button>
+	<button onclick="abrirVentanaHola()">Abrir ventana con HOLA</button>
+	<button onclick="abrirVentanaHolaConBotonCerrar()">Abrir ventana con HOLA y botón de cerrar</button>
+	<button onclick="abrirVentanaConImagen()">Abrir ventana con imagen</button>
+	<button onclick="abrirVentanaConImagenAleatoria()">Abrir ventana con imagen aleatoria</button>
+</body>
+</html>
