@@ -10,7 +10,7 @@
 <script type="text/javascript" src="src/javacito.js"></script>
 </head>
 
-<body>
+<body onresize="hideCardAll()" onload="hideCardAll()">
     <header>
 		<a href="index.html" class="logo">
 			<img src="//images.ctfassets.net/s5n2t79q9icq/3dB5uyWzUH95O1ZPBNNUX5/6cff7c65a809285755ea24b164b6ac65/magic-logo.png" alt="Magic: The Gathering Logo" loading="lazy">
@@ -60,4 +60,9 @@
         <div class="container">
             <p>&copy;Project Made by <a href="cv.html" target="_blank"><strong>Esteban Batres</strong></a> | All rights belong to Wizards of the Coast LLC, a subsidiary of Hasbro, Inc.</p>
         </div>
+		<script>
+		var m = window.matchMedia("(max-width: 700px)");
+   		// Call listener function at run time
+  		m.addEventListener(mediaQueries); // Attach listener function on state changes
+		</script>
     </footer>

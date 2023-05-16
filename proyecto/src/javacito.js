@@ -1,3 +1,13 @@
+function mediaQueries() {
+    if (m.matches) { // If media query matches
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+  
+  
+
 let images = ["mastroste.jpg","counterspell.jpg","reanimate.jpg","fire-elemental.jpg","llanowar.jpg"];
 let textboxes=["w","u","b","r","g"];
 let carta=["wt","ut","bt","rt","gt"];
@@ -5,9 +15,27 @@ function changeBackground(value) {
     document.getElementById("pepe").style.backgroundImage = `url(media/${images[value]})`;
  }
 
+ function hideTextboxAll(){
+    if(mediaQueries()==1){
+        for (let i = 0; i < textboxes.length; i++) {
+            hideTextbox(i);
+        }
+    }
+    
+ }
+
+ function hideCardAll(){
+    if(mediaQueries()==1){
+        for (let i = 0; i < carta.length; i++) {
+            hideCard(i);
+        }
+    }
+ }
+
 function showTextbox(value) {
-    var textbox = document.getElementById(textboxes[value]);
-    textbox.style.display = "block";
+        var textbox = document.getElementById(textboxes[value]);
+        textbox.style.display = "block";
+    
 }
 
 
@@ -22,9 +50,11 @@ function hideTextbox(id) {
 
 function showCard(id){
     let containers = document.getElementsByClassName("cartita");
-    for (let i = 0; i < containers.length; i++) {
-        if (containers[i].id==id) {
-            containers[i].style.display="block";
+    if(mediaQueries()==0){
+        for (let i = 0; i < containers.length; i++) {
+            if (containers[i].id==id) {
+                containers[i].style.display="block";
+            }
         }
     }
 }
