@@ -10,7 +10,7 @@
 <script type="text/javascript" src="src/planitos.js"></script>
 </head>
 
-<body>
+<body onload="showSlides(slideIndex);">
 	
     <header>
 		<a href="index.html" class="logo">
@@ -23,94 +23,117 @@
             <a href="story.html" class="nav-link">Story</a>
 		</nav>
 	</header>
-	<section id="description">
-	<div class="slideshow-container">
+	<!-- Container for the image gallery -->
+<div class="container">
 
-		<div class="mySlides fade">
-		  <div class="numbertext">1 / 3</div>
-		  <img src="media/ixalan.jpg">
-		  <div class="text">Ixalan</div>
-		</div>
-		
-		<div class="mySlides fade">
-		  <div class="numbertext">2 / 3</div>
-		  <img src="media/izzet.jpg">
-		  <div class="text">Ravnica</div>
-		</div>
-		
-		<div class="mySlides fade">
-		  <div class="numbertext">3 / 3</div>
-		  <img src="media/inistrad.jpg">
-		  <div class="text">Inistrad</div>
-		</div>
-		
-		<a class="prev" onclick="plusSlides(-1)">❮</a>
-		<a class="next" onclick="plusSlides(1)">❯</a>
-		
-		</div>
-		<br>
-		
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1),showTextbox('w')"></span> 
-		  <span class="dot" onclick="currentSlide(2),showTextbox('u')"></span> 
-		  <span class="dot" onclick="currentSlide(3),showTextbox('r')"></span> 
-		</div>
-		<script>showSlides(slideIndex);</script>
-	</section>
-	<section id="description">
-		<div id="pepe">
-				<div class="textbox" id="w">
-					White cards seek "peace through structure". The color of morality, order, and hierarchy, white cards often depict how creatures come together, whether that be in communities, religions, or even militaries. Protecting and serving the 'common good' is white's biggest goal, and it does this mechanically through effects like lifegain, protection, and phasing.
-		
-					However, it's important not to mistake white's morality as being inherently good. White cares about the group, not the individual, which is why it's one of the best colors at producing numerous, small, disposable creature tokens. When taken to the extreme, white can even become fanatical or downright fascist in its approach; it's the color of removal, with lots of powerful exiling spells and board wipes in its arsenal.
-					
-					White is also the color of 'rules setting', and attempts to limit how much other colors can flex with the 'fairness' of a game. For example, taxing effects like Smothering Tithe and Monologue Tax are white, and it tends to limit its own card draw capabilities to ways that benefit other players too, such as Secret Rendezvous.
-				  </div>
-				  <div class="textbox" id="u">
-					Blue is all about "perfection through knowledge". It's not good or bad, lawful or chaotic, blue seeks to gain more knowledge in any way it can.
-		
-		As opposed to red's impulsive, rebellious approach to the rules, blue simply doesn't consider limitations or rules a concern if they're getting in the way of a bigger, grander goal. This is why blue is the main color for card draw – gaining more cards, more understanding, and more options with little drawback is an incredibly powerful ability that is core to blue's identity.
-		
-		Like white, blue is very sure in how it wants the world. Unlike white, though, a blue player is more about bending the world to their own design, rather than conforming to what is strictly 'fair'. Whether it be counter spells, changing or bouncing other players' permanents, or even just forcing opponents to 'forget' all they know by discarding their entire deck, blue challenges white's rigidity by an on-the-fly, very fluid approach to board management.
-		
-		Though blue is concerned with knowledge and perfection, that doesn't always have to necessarily mean in an academic sense. For example, the planeswalker Niko Aris is based in blue because they have spent so long pursuing athletic perfection.
-		
-		You also tend to find a lot of sea creatures in this color. Though it's mainly a way to ensure blue has a few big creatures of its own, there is also a metaphorical aspect to it, as the ocean in Magic often represents the unknowable and unattainable – something blue would care about very much.
-				</div>
-				<div class="textbox" id="b">
-					Power at any cost is black's core theme. Opportunistic and self-serving, its main concern is "power through ruthlessness".
-		
-		Black is the color most likely to make sacrifices to get the upper hand. Most commonly this is through either sacrificing their own creatures (such as with a Viscera Seer to scry), or using their own life with cards like Vampiric Tutor. In exchange for these downsides, black is a bit more flexible than most other colors, being able to do a bit of everything, as long as it's willing to pay the price.
-		
-		Black can sometimes be spiteful, too. Other people having strength is a direct threat to black, and so it is the best color for destroying other players' creatures or forcing them to discard cards.
-		
-		Because black is so obsessed with gaining its own power, it struggles with anything it can't manipulate or corrupt. Artifacts and enchantments are a big, big weak point for the color, as their lifeless, insentient natures protect them from black's schemes. On the other than, it is an excellent color for killing creatures, and has lots of board wipes and removal effects to deal with anything living.
-		
-		Like white, it's important not to confuse black with being evil. While it is self-serving and ruthless, the goals it pursues don't have to be malicious. Liberty and freedom to act however you like is core to black's identity, whether that comes out as a tyrannical demon fuelled by war like Ob Nixalis, or a vampire who is protective of his home, like Sorin Markov.
-				</div>
-				<div class="textbox" id="r">
-					Red is impulsive and emotional. The color of passion, frivolity, and chaos, it's the color most focused on "freedom through action".
-		
-		While red is happy to burn itself for a leg up, like black, it's much more in the moment, and very rarely looks ahead further than a single turn. It wants to experience all the things, and it wants to experience them now. This is best shown in red's impulsive draw mechanics, which makes extra cards available to you, but only for a limited amount of time, and in rummaging and looting effects, which both force you to discard a card and draw a card.
-		
-		Red is fine with making smaller amounts of progress if it can do them quickly. It likes direct-damage burn spells like Shock or Lightning Bolt, and has lots of cheaper creatures with haste who can start swinging as soon as they're cast. It's also more recently become a color that really enjoys making single-use mana artifacts, like Treasure or Gold tokens.
-		
-		Though quick, red has a tendency to run out of steam even quicker. If an opponent isn't defeated in the first few turns of a game, it can struggle to keep the pressure up in the long term. Its passion can also massively backfire on them, with lots of red cards focused on chaotic, random-chance outcomes, such as Chaos Warp or Warp World shaking up the game beyond what any player could reasonably predict.
-		
-		That doesn't mean red can't have some big, late-game plays, though. Red's most well-known creature type are the dragons, who are expensive and volatile, but can also deal massive amounts of damage. A great example is the Scourge of the Throne, a dragon that gives an additional combat phase when it deals damage to the player with most life. It's one of a number of red cards that grant a player extra combat phases, to ensure their creatures can swing and attack as much as possible.
-				</div>
-				<div class="textbox" id="g">
-					Growth, strength, and sturdiness are all central to green's identity. Defined as "growth through acceptance", it's a color that likes to make slower, but more stable improvements over black or red's fast and costly advantages.
-		
-		As you'd expect, green is the color of nature, and can pull lands out of a deck better than any other. All the best ramp spells in the game are green: Cultivate, Rampant Growth, and Migration Path among them. It can deal with unnatural artifacts and enchantments incredibly well, through cards like Return to Nature or Reclamation Sage.
-		
-		Like white, green cares about community, though green's ideal is more based on the natural order of things than any organized society. It's great at producing creature tokens, and is also defined by its larger, 'stompier' creatures. +1/+1 counters are also a core theme of green, as they represent the constant growth of nature.
-		
-		In combat, trample is central to green, letting those big creatures ignore any petty defenses an opponent might put up. Nature is nurturing and communal, but it's also uncaring in the face of anything that tries to stand in its way.
-		
-		A downside to green is that it is a very narrow-minded approach. Nature is seen as the perfect system, and so it has little time for anything that isn't raising creatures and smashing them against an opponent. That means it is incredibly vulnerable if anything stops the game plan, like a board wipe or an even bigger creature standing in its way.
-				</div>
-			</section>
+	<!-- Full-width images with number text -->
+	<div class="mySlides">
+	  <div class="numbertext">1 / 6</div>
+		<img src="media/inistrad.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">2 / 6</div>
+		<img src="media/ravnica.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">3 / 6</div>
+		<img src="media/dominaria.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">4 / 6</div>
+		<img src="media/theros.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">5 / 6</div>
+		<img src="media/ixalan.jpg" style="width:100%">
+	</div>
+  
+	<div class="mySlides">
+	  <div class="numbertext">6 / 6</div>
+		<img src="media/kamigawa.jpg" style="width:100%">
+	</div>
+  
+	<!-- Thumbnail images -->
+	<div class="row">
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/inistrad.jpg" style="width:100%" onclick="currentSlide(1)" alt="Inistrad"></a>
+	  </div>
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/ravnica.jpg" style="width:100%" onclick="currentSlide(2)" alt="Ravnica"></a>
+	  </div>
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/dominaria.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dominaria"></a>
+	  </div>
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/theros.jpg" style="width:100%" onclick="currentSlide(4)" alt="Theros"></a>
+	  </div>
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/ixalan.jpg" style="width:100%" onclick="currentSlide(5)" alt="Ixalan"></a>
+	  </div>
+	  <div class="column">
+		<a href="#"><img class="demo cursor" src="media/kamigawa.jpg" style="width:100%" onclick="currentSlide(6)" alt="Kamigawa"></a>
+	  </div>
+	</div>
+	
+	<!-- Image text -->
+	<div class="caption-container">
+	  <p id="caption"></p>
+	</div>
+  </div>
+  	<div class="pwinf">
+		<h2 class="color-acento">Inistrad</h1>
+		<p>When the light fades and the moon rises over Innistrad, humanity becomes the universal prey. Packs of werewolves are drawn out by the moon, their humanity washed away by animal rage. Vampire families bare their fangs at the scent of human blood. Hordes of walking dead lurch across the manors and moors, driven by an innate hunger for the living. Alchemically created abominations twitch to life in alchemists' laboratories. Geists haunt the huddled human towns and terrify travelers along the dark crossways in between. From Innistrad's depths, powerful demons and impish devils plot humanity's downfall.</p>
+		<p>The humans of Innistrad have done their best to fight back. They form torch-wielding mobs to cleanse the abominations with fire. They train specialized holy warriors called cathars to strike back against the supernatural horrors. Most of all, they brandish the power of the Church of Avacyn. The Church is named for its leader, the powerful archangel Avacyn who was created by the Planeswalker Sorin Markov to safeguard humanity and allow them to coexist with their predators.</p>
+		<p>Innistrad's last few years have been tumultuous. First the demon Griselbrand trapped Avacyn in the Helvault with him, weakening the strength of the rites that invoked her and lowering humanity's defenses against the horrors of the night. When the situation was at its worst, with zombie armies marching on the high city of Thraben, the Helvault was sundered and Avacyn was released. But no sooner had Avacyn restored some measure of peace and balance to the plane than a new threat began to spin Innistrad toward its doom.</p>
+		<p>Madness swept over Innistrad as the fleeting hope of Avacyn's angelic protection turned to horror. Sorin Markov finally intervened, unmaking his beloved creation. But with Avacyn's unmaking, the last protections over the plane fell as well, opening it to new otherworldly intruders....</p>
+	</div>
+	<div class="pwinf">
+		<h2 class="color-acento">Ravnica</h1>
+		<p>Ravnica's vast, worldwide cityscape is a patchwork of grand halls, decrepit slums, and ancient ruins, with layer upon layer of stonework—and guild maneuverings.</p>
+		<p>Of the world's countless civic centers, one looms large above all others: the City of Ravnica, a metropolis so vast that its name has long since become synonymous with the entire plane. It is here, amid the mazes of streets and towering Gothic spires, that Ravnica's guilds vie for power.</p>
+		<p>Each of the ten guilds has mastered two of the five colors of mana, resulting in dramatically different cultural identities and functions.</p>
+		<p>The military guild of Boros (red-white) believes righteousness is fire, shining with the light of justice. The dragon-led Izzet (blue-red) fuses elemental magic and technology, making its members the undisputed masters of innovation.</p>
+		<p>The exclusive members of Selesnya (green-white) honor selflessness, nurturing, and spiritual congregation—while outsiders see them as brainwashed nature cultists. The death-worshiping Golgari guild (black-green) controls a vast undead army and labor force in the city's underbelly. Secretive House Dimir (blue-black) fuels ghost stories of necromancer advisors, phantasmal assassins, and black horrors slithering in the sewers.</p>
+		<p>Orzhov (white-black) is a rigid hierarchy of pomp and ritual, slaves to deals and coin. Gruul (red-green) is the guild of beggars, gangs, and raiding parties, all driven by base urges and instinct.</p>
+		<p>The Azorius Senate (white-blue) are the primary lawmakers on Ravnica, in contrast to the demon-led Rakdos (black-red), who delight in thrill-killing and pleasure-seeking. Amid all this politics and chaos, the researchers of the Simic Combine (green-blue) work industriously to maintain nature, even modifying it to survive.</p>
+		<p>The power of each guild had been kept in check by an ancient agreement known as the Guildpact. But as this agreement dissolves, thanks to the influence of a mysterious outside threat, Ravnica descends into a state of cold war between the Guilds.</p>
+	</div>
+	<div class="pwinf">
+		<h2 class="color-acento">Dominaria</h1>
+		<p>Home to a rich variety of terrain—cold mountains, wide plains, jungles, deserts, islands—this plane boasts countless historic locations, from the volcanic continent of Shiv to the time-shattered isle of Tolaria to the wretched island of Urborg.</p>
+		<p>It's also the birthplace of brothers Urza and Mishra, master artificers who discovered ancient stones of power in the Caves of Koilos. In their lust for power, the brothers waged a savage war against each other, devastating Dominaria and plunging the plane into an ice age. At the end of this war, Urza discovered the dark plane of Phyrexia, a hell of flesh, metal, and grease, where the line between living and artificial was blurred.</p>
+		<p>Phyrexia nearly invaded Dominaria, were it not for the skyship Weatherlight and its crew. The famous flying vessel contained ancient magical technology that enabled the ship to planeswalk. The Weatherlight, its crew of heroes, and a collection of artifacts called the Legacy (including the Planeswalker, Karn) were all instrumental in thwarting the invasion.</p>
+		<p>Dominaria was also the epicenter of the temporal-planar fractures that threatened all the planes. A host of cataclysms, many caused by Planeswalkers, left Dominaria desolated, destabilizing the fabric of the Multiverse. The damage to time and space spread outward from Dominaria and started affecting other planes. A handful of powerful Planeswalkers intervened to mend the rifts, thus restabilizing all the planes.</p>
+		<p>Today, after generations of peaceful development, much of Dominaria has managed to rebuild the cultures of its past. Benalia, New Argive, the Tolarian Academies, and Femeref all thrive as primarily human societies, while the Vodalian Merfolk, the Llanowar Elves, and the treefolk of Yavimaya have all also flourished in recent decades.</p>
+		<p>However, as the cult of the Cabal grows in strength, now under the control of the Demonlord Belzenlok, Dominaria faces new threats…and looks to heroes both old and new to answer them.</p>
+	</div>
+	<div class="pwinf">
+		<h2 class="color-acento">Theros</h1>
+		<p>Theros is ruled by an awe-inspiring pantheon of gods. Mortals tremble before them, feel the sting of their petty whims, and live in terror of their wrath. It is a plane where barbaric, cave-dwelling minotaurs descend on wayward travelers. Giants stalk the land, drawing strength from the terrain on which they tread. At sea, massive krakens prowl its depths, and sirens lure its sailors to their demise. Yet amid such colossal perils, mortals have found a way to endure, and it is here that the hero's mantle is raised highest.</p>
+		<p>Not only have the mortals endured, they have managed to thrive, for Theros is also a plane where civilization is protected behind the walls of great poleis, each city-state a bulwark against the raging monsters that roam the more savage places of Theros. Meletis, the polis of learning, progress, magic, and devotion to the gods, is a testament to the achievements of civilized humanity. It is hemmed in by vast golden wheat fields and the Siren Sea, and defended by the Reverent Army. In the polis of Akros, martial prowess is held in the highest esteem. Akroan warriors have reached near-mythic status throughout Theros. The imposing cliff-top fortress of Akros lies at the center of a network of outposts that serve to protect the rest of Theros, a fact that comforts many Therans. Setessa, the isolated polis surrounded by concentric rings of forest, is fiercely independent. Strong bonds connect its inhabitants, and all in Setessa share a veneration of nature.</p>
+	</div>
+	<div class="pwinf">
+		<h2 class="color-acento">Ixalan</h1>
+		<p>Deep in the heart of Ixalan's verdant jungle lies a treasure beyond imagining. Secure in the ancient golden city of Orazca, the Immortal Sun is an artifact of mythic power that promises boundless wealth, the strength of empire, command over nature, and eternal life. For centuries it was only dimly remembered, veiled in legend, but now legend has become reality, and all the peoples of Ixalan seek the Immortal Sun and the power it promises. They will stop at nothing to claim it for their own.</p>
+		<p>The merfolk of the River Heralds and the humans of the Sun Empire have shared the continent of Ixalan for ages, sometimes warring, sometimes in an uneasy peace. But outsiders—first the treasure-hungry pirates of the Brazen Coalition and now the sinister fleets of the Legion of Dusk—have disrupted that delicate balance of power. And as the Legion of Dusk seeks to conquer Ixalan, all four peoples are catapulted into a desperate search for the golden city and the treasure it holds.</p>
+		<p>A whole world waits to be discovered. Ancient ruins from the Sun Empire's heyday can now be found, overgrown and half-buried, in the depths of the jungle. Sacred springs infused with magical power well up from high mountainsides. Hidden coves hold pirate treasures stowed by captains long forgotten. Brave explorers from all four peoples uncover such sites as they scour Ixalan in search of the golden city.</p>
+	</div>
+	<div class="pwinf">
+		<h2 class="color-acento">Kamigawa</h1>
+		<p>For many hundreds of years, Kamigawa's denizens peacefully worshipped the spirits of their world. Then suddenly their gods attacked, forcing the world into brutal war.</p>
+		<p>Reminiscent of sengoku-era Japan, this plane contains two symbiotic worlds: the utsushiyo, or material realm, and the kakuriyo, or kami spirit realm. Each kami was a divinity, and the way to happiness was to honor these gods and live by their ways. The inhabitants of Kamigawa were content with this life of devotion. Then the unimaginable happened. Their gods turned on them.</p>
+		<p>Slowly at first, the kami began to take form in the material world. Some scholars believed they were delivering a message or a warning. But their appearance was so alien and surreal, no true meaning could be discerned.</p>
+		<p>Meanwhile, the plane's most powerful warlord, the daimyo Takeshi Konda, ruled over the Towabara Plains from his stronghold at Eiganjo. Even as his armies and samurai secured more territory in Konda's name, the kami manifested in ever-greater numbers.</p>
+		<p>Then came the night that changed Kamigawa forever. A few miles from Eiganjo Castle, the kami set upon the town of Reito. Scores of spirit-world monstrosities swept through the town, killing nearly every living thing. Hundreds were slain and few survived. The Kami War had begun. Over the next twenty years, spirits of every shape and size would descend on the plains, ravaging everything in their path.</p>
+		<p>Throughout this siege, Konda remained within his stronghold, mysteriously safe from harm.</p>
+		<p>Kamigawa's people wondered why the kami betrayed them, even as they fought for survival. What had they done wrong?</p>
+		<p>In truth, it was the proud daimyo Konda who had begun the war. With aid from moonfolk allies, Konda kidnapped a kami to secure his own power and immortality. This outraged the great O-Kagachi, kami of all things, igniting an ire that would claim countless lives.</p>
+		<p>Only Konda's daughter Michiko and a stolen kami—an entity who calls herself Kyodai—have any hope of placating the kami and restoring a fragile peace to the land.</p>
+	</div>
 	<footer>
         <div class="container">
             <p>&copy;Project Made by <a href="cv.html" target="_blank"><strong>Esteban Batres</strong></a> | All rights belong to Wizards of the Coast LLC, a subsidiary of Hasbro, Inc.</p>
