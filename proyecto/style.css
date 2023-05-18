@@ -304,6 +304,7 @@ footer .container{
     position: absolute;
     top: 50%;
     left: auto;
+    right: 15%;
     width: 50%;
     max-height: 25%;
     padding: 10px;
