@@ -214,8 +214,12 @@ button:hover{
 
 #caracteristicas .container{
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 250px 100px;
+}
+.active{
+    text-decoration: underline orangered;
+    text-underline-offset: 10px;
 }
 
 #caracteristicas li{
