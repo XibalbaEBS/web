@@ -209,6 +209,8 @@ button:hover{
 }
 
 #caracteristicas {
+    background-image: url("media/undercover_operative.jpg");
+    background-position: center top;
     background-color: rgb(30,30,30);
 }
 
