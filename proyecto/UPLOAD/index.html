@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A simple website about MTG for a school project.">
+<meta name="keywords" content="MTG, Magic: The Gathering">
+<meta name="author" content="Esteban Batres">
+<title>Magic: The Gathering</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+<script type="text/javascript" src="src/javacito.js"></script>
+</head>
+
+<body>
+    <header>
+		<a href="index.html" class="logo">
+			<img src="//images.ctfassets.net/s5n2t79q9icq/3dB5uyWzUH95O1ZPBNNUX5/6cff7c65a809285755ea24b164b6ac65/magic-logo.png" alt="Magic: The Gathering Logo" loading="lazy">
+		</a>
+		<nav>
+			<a href="colors.html" >Colors</a>
+			<a href="characters.html" >Characters</a>
+			<a href="planes.html" >Planes</a>
+            <a href="story.html" >Story</a>
+		</nav>
+	</header>
+
+    <section id="hero">
+        <h1>MTG</h1>
+        <a href="#description"><button>More Info</button></a>
+    </section>
+
+    <section id="description">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2><span class="color-acento">Magic: The Gathering</span></h2>
+                <p>A standard game of Magic involves two or more players who are engaged in a battle acting as powerful wizards, known as Planeswalkers. Each player has their own deck of cards, either one previously constructed or made from a limited pool of cards for the event. A player typically starts the game with a "life total" of twenty and loses the game when their life total is reduced to zero.
+                    A player can also lose if they must draw from an empty deck. Some cards specify other ways to win or lose the game.
+                    Additionally, one of the "Magic Golden Rules" is that "Whenever a card's text directly contradicts these rules, the card takes precedence".
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore">
+        <div class="container">
+            <h2>Explore</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Explore <br>Ixalan</h3>
+                    <p>Ixalan is a Mesoamerican-inspired plane full of uncharted jungles where dangerous beasts, magnificent ruins, and lost treasures lie waiting to be discovered.</p>
+                    <a href="planes.html#Ixalan"><button>GO</button></a>
+                </div>
+                <div class="carta">
+                    <h3>Explore <br>Ravnica</h3>
+                    <p>Ravnica is a plane whose main planet is covered in a large city, eponymously known as Ravnica. It takes its flavor from that of Eastern Europe. </p>
+                    <a href="planes.html#Ravnica"><button>GO</button></a>
+                </div>
+                <div class="carta">
+                    <h3>Explore <br>Inistrad</h3>
+                    <p>Innistrad is a plane. It takes its inspiration from Gothic fiction set in 18th and 19th century Germany and Eastern Europe.</p>
+                    <a href="planes.html#Inistrad"><button>GO</button></a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li class="color-acento"> Choose a Character!</li>
+                <li ><strong><a id="gi" href="characters.html#gideon">Gideon Jura</a></strong></li>
+                <li ><strong><a id="ja" href="characters.html#jace">Jace Beleren</a></strong></li>
+                <li ><strong><a id="li" href="characters.html#liliana">Liliana vess</a></strong></li>
+                <li ><strong><a id="ch" href="characters.html#chandra">Chandra Nalaar</a></strong></li>
+                <li ><strong><a id="ni" href="characters.html#nissa">Nissa Revane</a></strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Go to your Local Game Store!</h2>
+        <a href="https://locator.wizards.com/" target="_blank"><button>Search</button></a>
+    </section>
+
+    <footer>
+        <div class="container">
+            
+            <p>&copy;Project Made by <a href="cv.html" target="_blank"><strong>Esteban Batres</strong></a> | All rights belong to Wizards of the Coast LLC, a subsidiary of Hasbro, Inc.
+                | <a href="contact.html">Contact </a>
+                | <a href="privacy_policy.html">Privacy Policy</a>
+                | <a href="#">Back to top</a>
+            </p>
+            
+        </div>
+        
+    </footer>
+    <script>window.onload=loadListeners();</script>
+</body>
+</html>

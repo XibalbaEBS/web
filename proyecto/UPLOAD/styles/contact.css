@@ -1,0 +1,71 @@
+input[type=text],input[type=tel],input[type=email], select, textarea {
+    color: black;
+    font-size: large;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    font-size: large;
+    background-color: #ea3601;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+  .containers {
+    color: white;
+    background-image: url(../media/Errant-and-Giada-Variant-March-of-the-Machine-MtG-Art.jpg);
+    background-size: cover;
+    font-size: large;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  textarea{
+    resize: none;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

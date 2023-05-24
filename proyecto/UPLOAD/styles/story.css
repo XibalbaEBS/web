@@ -1,0 +1,20 @@
+.mtgstory {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.25;
+    display: inline-block;
+    background: #6424d2;
+    padding: .2em .5em;
+}
+
+.figure-wrapper {
+    text-align: center;
+    margin: 0 0 2em;
+    min-height: 90vh;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+}

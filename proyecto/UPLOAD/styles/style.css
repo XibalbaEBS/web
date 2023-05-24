@@ -1,0 +1,621 @@
+*{box-sizing:border-box;}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.pwinf{
+    color: white;
+    padding: 25px;
+    text-align: left;
+}
+
+.icon{
+    z-index: 14;
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+header{
+    z-index: 13;
+    display: flex;
+    min-height: 50px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #ea3601;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: #ea3601;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav{color: white;}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #ea3601;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(30,30,30);
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #ea3601;
+}
+
+button:hover{
+    background-color: red;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:#ea3601; }
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/sensei.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#description .container{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#explore{
+    background-color: rgb(30,30,30);
+    background-image: url("../media/explore.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+#explore .container{
+    padding: 150px 12px;
+}
+
+#explore h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#explore p{
+    display: none;
+}
+
+#explore .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: url("../media/ixalan_cropped.jpg");
+    background-size: cover;
+
+}
+
+.carta:nth-child(2){
+    background-image: url("../media/izzet.jpg");
+    background-size: cover;
+}
+
+.carta:nth-child(3){
+    background-image: url("../media/inistrad.jpg");
+    background-size: cover;
+}
+
+#caracteristicas {
+    background-image: url("../media/undercover_operative.jpg");
+    background-position: center top;
+    background-color: rgb(30,30,30);
+}
+
+#caracteristicas .container{
+    color: white;
+    text-align: left;
+    padding: 250px 100px;
+}
+.active{
+    text-decoration: underline orangered;
+    text-underline-offset: 10px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    background-image: url(../media/treasure_map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    z-index: 13;
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(200,200,200);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90vh;
+    /*margin-left: 75px;*/
+    background-position: center;
+    font-size: 30px;
+    background-image: url(../media/troste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #pepe .textbox{
+    border-style: solid;
+    font-size: 18px;
+    display: none;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 15%;
+    width: 50%;
+    max-height: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: scroll;
+  }
+
+  #pepe .cartita{
+    display: none;
+  }
+  
+  #pepe .img{
+    max-width: 100%;
+  }
+  .cartita img{
+    -webkit-transform: translateX(+15%);
+    -ms-transform: translateX(+15%);
+    transform: translateX(+15%);
+    
+    max-width: 403px;
+    
+    max-height: 562px;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  #pepe .textbox::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #pepe .textbox {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  #pepe #w{
+    background-color: rgba(100, 100, 100, 0.5);/* transparent white */
+    color: white;
+  }
+
+  #pepe #u{
+    background-color: rgba(0, 0, 255, 0.5);/* transparent blue */
+    color: white;
+  }
+  
+  #pepe #b{
+    background-color: rgba(0, 0, 0, 0.5);/* transparent black */
+    color: white;
+  }
+
+  #pepe #r{
+    background-color: rgba(255, 0, 0, 0.5);/* transparent red */
+    color: white;
+  }
+
+  #pepe #g{
+    background-color: rgba(0, 255, 0, 0.2);/* transparent green */
+    color: white;
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
+
+
+@media (min-width: 700px){
+    .content {
+        background-position: top;
+    }
+    .cartita img{
+        -webkit-transform: translateX(+25%);
+        -ms-transform: translateX(+25%);
+        transform: translateX(+25%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+   
+    .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+    #pepe .textbox{
+        right: 5%;
+        width: 20%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+@media (min-width: 850px){
+    
+
+    .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+    
+
+    header{
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #description .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #description .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #description h2{
+        margin-top: 0px;
+    }
+
+    #description .img-container{
+        background-image: url("../media/temporal.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #explore .programas{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #explore p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #explore h2{
+        font-size: 4em;
+    }
+
+    #explore h3{
+        margin-top: 0;
+    }
+
+    #explore .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        width: 25%;
+    }
+
+    .carta:first-child{
+        background-image: url("../media/ixalan_cropped.jpg");
+        background-size: cover;
+
+    }
+
+    .carta:nth-child(2){
+        background-image: url("../media/izzet.jpg");
+        background-size: cover;
+    }
+
+    .carta:nth-child(3){
+        background-image: url("../media/inistrad.jpg");
+        background-size: cover;
+    }
+
+    #caracteristicas{
+        background-image: url("../media/undercover_operative.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 500px;
+        background-position: calc(100vw - 500px) 90px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+        background-position-y: 80px;
+    }
+}
