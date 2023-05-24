@@ -163,7 +163,7 @@ button:hover{
 
 #explore{
     background-color: rgb(30,30,30);
-    background-image: url("media/explore.jpg");
+    background-image: url("../media/explore.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -193,23 +193,23 @@ button:hover{
 }
 
 .carta:first-child{
-    background-image: url("media/ixalan_cropped.jpg");
+    background-image: url("../media/ixalan_cropped.jpg");
     background-size: cover;
 
 }
 
 .carta:nth-child(2){
-    background-image: url("media/izzet.jpg");
+    background-image: url("../media/izzet.jpg");
     background-size: cover;
 }
 
 .carta:nth-child(3){
-    background-image: url("media/inistrad.jpg");
+    background-image: url("../media/inistrad.jpg");
     background-size: cover;
 }
 
 #caracteristicas {
-    background-image: url("media/undercover_operative.jpg");
+    background-image: url("../media/undercover_operative.jpg");
     background-position: center top;
     background-color: rgb(30,30,30);
 }
@@ -236,7 +236,7 @@ button:hover{
     align-items: center;
     text-align: center;
     background-color: rgb(30,30,30);
-    background-image: url(media/treasure_map.jpg);
+    background-image: url(../media/treasure_map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
