@@ -57,7 +57,7 @@
 
 /* Container for image text */
 .caption-container {
-  text-align: justify;
+  text-align: left;
   background-color: #222;
   padding: 25px;
   color: white;
