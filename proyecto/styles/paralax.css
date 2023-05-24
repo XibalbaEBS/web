@@ -18,26 +18,26 @@
 
     #chandra {
         /* The image used */
-        background-image: url("media/chandro.jpg");
+        background-image: url("../media/chandro.jpg");
 
     }
     #liliana {
         /* The image used */
-        background-image: url("media/lily.jpg");
+        background-image: url("../media/lily.jpg");
 
     }
     #jace {
         /* The image used */
-        background-image: url("media/Oath-of-Jace-MtG-Art-Oath-of-the-Gatewatch-.jpg");
+        background-image: url("../media/Oath-of-Jace-MtG-Art-Oath-of-the-Gatewatch-.jpg");
 
     }
     #gideon {
         /* The image used */
-        background-image: url("media/oath-gideon.jpg");
+        background-image: url("../media/oath-gideon.jpg");
 
     }
     #nissa {
         /* The image used */
-        background-image: url("media/Oath-of-Nissa-MtG-Art-Oath-of-the-Gatewatch-.jpg");
+        background-image: url("../media/Oath-of-Nissa-MtG-Art-Oath-of-the-Gatewatch-.jpg");
 
     }

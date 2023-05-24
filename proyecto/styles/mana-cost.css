@@ -1,5 +1,5 @@
 .mana {
-    background-image: url('media/mana.svg');
+    background-image: url('../media/mana.svg');
     background-repeat: no-repeat;
     background-size: auto 700%;
     display: inline-block;

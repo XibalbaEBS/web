@@ -31,7 +31,7 @@ input[type=text],input[type=tel],input[type=email], select, textarea {
   
   .containers {
     color: white;
-    background-image: url(media/Errant-and-Giada-Variant-March-of-the-Machine-MtG-Art.jpg);
+    background-image: url(../media/Errant-and-Giada-Variant-March-of-the-Machine-MtG-Art.jpg);
     background-size: cover;
     font-size: large;
     border-radius: 5px;

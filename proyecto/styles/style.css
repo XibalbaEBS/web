@@ -140,7 +140,7 @@ button:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/sensei.jpg");
+    ,url("../media/sensei.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -294,7 +294,7 @@ footer .container{
     /*margin-left: 75px;*/
     background-position: center;
     font-size: 30px;
-    background-image: url(media/troste.jpg);
+    background-image: url(../media/troste.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -534,7 +534,7 @@ footer .container{
     }
 
     #description .img-container{
-        background-image: url("media/temporal.jpg");
+        background-image: url("../media/temporal.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -570,23 +570,23 @@ footer .container{
     }
 
     .carta:first-child{
-        background-image: url("media/ixalan_cropped.jpg");
+        background-image: url("../media/ixalan_cropped.jpg");
         background-size: cover;
 
     }
 
     .carta:nth-child(2){
-        background-image: url("media/izzet.jpg");
+        background-image: url("../media/izzet.jpg");
         background-size: cover;
     }
 
     .carta:nth-child(3){
-        background-image: url("media/inistrad.jpg");
+        background-image: url("../media/inistrad.jpg");
         background-size: cover;
     }
 
     #caracteristicas{
-        background-image: url("media/undercover_operative.jpg");
+        background-image: url("../media/undercover_operative.jpg");
         background-repeat: no-repeat;
         background-size: 400px 500px;
         background-position: calc(100vw - 500px) 90px;
